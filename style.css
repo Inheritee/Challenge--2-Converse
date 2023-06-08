@@ -63,7 +63,7 @@ Abosolute positioning class .sale-tag <p> element*/
 .color {
   background-color: black;
   display: inline-block;
-  margin-right: 5px;
+  /* margin-right: 5px; */
   height: 22px;
   width: 22px;
 }
@@ -89,8 +89,8 @@ Abosolute positioning class .sale-tag <p> element*/
 }
 /* PRODUCT */
 .product-img {
-  float: left;
-  margin-right: 40px;
+  /* float: left;
+  margin-right: 40px; */
 }
 
 .product {
@@ -110,7 +110,7 @@ Abosolute positioning class .sale-tag <p> element*/
 /* product info */
 .price {
   font-size: 24px;
-  float: left;
+  /* float: left; */
 }
 
 .shipping {
@@ -118,13 +118,12 @@ Abosolute positioning class .sale-tag <p> element*/
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px;
   float: right;
-  margin-top: 8px;
+  margin-top: 8px; */
 }
 
 .product-description {
-  clear: both;
   margin-bottom: 10px;
 }
 
@@ -142,9 +141,10 @@ Abosolute positioning class .sale-tag <p> element*/
 
 /* product details */
 .product-details {
-  width: 243px;
-  float: left;
+  /* width: 243px;
+  float: left; */
   margin-top: 20px;
+  flex: 1;
 }
 
 .details-title {
@@ -209,9 +209,28 @@ button:hover {
 
 .product-info {
   /* (825px containersize 8px bordersize 250px image and 80px empty space) 
-  = 487px width, but we have two so /2 = 243.5 px*/
+  = 487px width, but we have two so /2 = 243.5 px
   width: 243px;
-  float: left;
+  float: left; */
+  flex: 1;
   margin-right: 40px;
   margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  /* align-items: flex-start; */
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+
+.product-colors {
+  display: flex;
+  gap: 10px;
 }
