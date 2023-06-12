@@ -235,3 +235,30 @@ button:hover {
   display: flex;
   gap: 10px;
 }
+
+/* grid layout */
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+}
+
+.product-title {
+  grid-column: 1/4;
+}
+
+.add-cart {
+  grid-column: 1/4;
+}
+
+/* !unnecessary! */
+/* .product-img {
+  grid-column: 1;
+}
+.product-info {
+  grid-column: 2;
+} */
+
+/* .product-details {
+  grid-column: 3;
+} */
